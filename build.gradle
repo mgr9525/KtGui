@@ -16,13 +16,21 @@ buildscript {
 
 apply plugin: 'konan'
 
-konan.targets= ['mingw']
+konan.targets= ['mingw','linux']
 
 konanArtifacts {
     program('main'){
-        libraries{
-            klib "kotlint-sdlui"
-            linkerOpts '-Lnlibs -mwindows'
+        target('mingw'){
+            libraries{
+                klib "rsKtGui"
+                linkerOpts '-Lnlibs -mwindows'
+            }
+        }
+        target('linux'){
+            libraries{
+                klib "rsKtGui"
+                linkerOpts '-Lnlibs'
+            }
         }
     }
 }

@@ -14,7 +14,7 @@
           "height":"350",
           "background-color":"#ffffff",
           "controls":[
-            {"class":"ImageView","id":"img1","x":"10","y":"20","width":"match_parent","weight":2,"height":"300","src":"I:\\RuisCenter\\image\\IMG_1163.JPG"},
+            {"class":"ImageView","id":"img1","x":"10","y":"20","width":"match_parent","weight":2,"height":"300","src":"%apath%/ui/img/1.jpg"},
             {"class":"TextView","id":"text2","x":"10","y":"350","width":"match_parent","height":"200","text":"hello json!","background-color":"#ff00ff"}
           ]
         },
@@ -25,8 +25,8 @@
           "height":"350",
           "background-color":"#ffffff",
           "controls":[
-            {"class":"ImageView","id":"img3","x":"10","y":"20","width":"match_parent","weight":2,"height":"300","src":"I:\\RuisCenter\\image\\IMG_3474.JPG"},
-            {"class":"ImageView","id":"img4","x":"10","y":"350","width":"match_parent","height":"400","src":"I:\\RuisCenter\\image\\qrcode.png"}
+            {"class":"ImageView","id":"img3","x":"10","y":"20","width":"match_parent","weight":2,"height":"300","src":"%apath%/ui/img/1.jpg"},
+            {"class":"ImageView","id":"img4","x":"10","y":"350","width":"match_parent","height":"400","src":"%apath%/ui/img/qrcode.png"}
           ]
         }
       ]

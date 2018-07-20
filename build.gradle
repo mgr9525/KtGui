@@ -1,0 +1,28 @@
+group 'com.kotlint.test.ui'
+version '1.0-SNAPSHOT'
+
+buildscript {
+    repositories {
+        mavenCentral()
+        maven {
+            url  "https://dl.bintray.com/jetbrains/kotlin-native-dependencies"
+        }
+    }
+
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-native-gradle-plugin:+"
+    }
+}
+
+apply plugin: 'konan'
+
+konan.targets= ['mingw']
+
+konanArtifacts {
+    program('main'){
+        libraries{
+            klib "kotlint-sdlui"
+            linkerOpts '-Lnlibs -mwindows'
+        }
+    }
+}

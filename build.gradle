@@ -29,7 +29,7 @@ konanArtifacts {
         target('linux'){
             libraries{
                 klib "rsKtGui"
-                linkerOpts '-Lnlibs'
+                linkerOpts '-Lnlibs/linux'
             }
         }
     }

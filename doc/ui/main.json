@@ -15,7 +15,7 @@
           "background-color":"#ffffff",
           "controls":[
             {"class":"ImageView","id":"img1","x":"10","y":"20","width":"match_parent","weight":2,"height":"300","src":"%apath%/ui/img/1.jpg"},
-            {"class":"TextView","id":"text2","x":"10","y":"350","width":"match_parent","height":"200","text":"hello json!","background-color":"#ff00ff","font":"ui/simhei.ttf"}
+            {"class":"TextView","id":"text2","x":"10","y":"350","width":"match_parent","height":"200","text":"hello json!","background-color":"#ff00ff","font":"%apath%/ui/simhei.ttf"}
           ]
         },
         {
